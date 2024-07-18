@@ -1,5 +1,5 @@
 package api.test;
-import api.endpoints.UserEndPoints;
+import api.endpoints.User.UserEndPoints;
 import api.paylouds.User;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;

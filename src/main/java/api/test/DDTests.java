@@ -1,13 +1,11 @@
 package api.test;
 
-import api.endpoints.UserEndPoints;
+import api.endpoints.User.UserEndPoints;
 import api.paylouds.User;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import api.utilities.DataProviders;
 import io.restassured.response.Response;
-import org.testng.annotations.DataProvider;
 
 public class DDTests {
 

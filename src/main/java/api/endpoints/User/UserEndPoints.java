@@ -1,5 +1,6 @@
-package api.endpoints;
+package api.endpoints.User;
 
+import api.endpoints.User.Routes;
 import api.paylouds.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

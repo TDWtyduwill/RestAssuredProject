@@ -1,4 +1,4 @@
-package api.endpoints;
+package api.endpoints.User;
 
 //NUR URLS WERDEN HIER HINTERLEGT
 // Create user (Post): https://petstore.swagger.io/v2/user/ <-- baseURL
