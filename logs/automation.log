@@ -328,3 +328,4 @@
 14:28:08.745 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
 14:28:08.745 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
 14:28:08.746 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+16:51:16.399 [main] INFO  api.test.UserTests - ******Creating user **********
