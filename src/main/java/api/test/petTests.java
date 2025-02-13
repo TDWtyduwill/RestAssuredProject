@@ -46,6 +46,7 @@ public class petTests {
 
         // Gebe die erhaltene ID aus (zur Überprüfung)
         System.out.println("Erhaltene ID: " + petId);
+        System.out.println("Erhaltenewwwwwwwwwwww: " + petId);
 
         // Überprüfe, ob der Status korrekt gesetzt wurde
         given().pathParam("petId", petId)
