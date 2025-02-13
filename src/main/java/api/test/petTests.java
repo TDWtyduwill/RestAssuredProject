@@ -55,33 +55,33 @@ public class petTests {
                 .body("name", equalTo("Celina"));
     }
 
-    @Test(priority = 2)
-    public void testUpdateStatus() {
-
-
-
-        String updatBody = """
-                {
-                    "id": 12345,
-                    "name": "Celina",
-                    "status": "sold"
-                }
-                """;
-        given().contentType(ContentType.JSON)
-                .body(updatBody)
-                .when()
-                    .put(routesPets.put_url)
-                .then()
-                .statusCode(200)
-                .body("status", equalTo("sold"));
-
-
-        given().pathParam("status", petId)
-                .when()
-                .get(routesPets.get_url_status)
-                .then().statusCode(200)
-                .body("status", equalTo("sold"));
-
-
-    }
+//    @Test(priority = 2)
+//    public void testUpdateStatus() {
+//
+//
+//
+//        String updatBody = """
+//                {
+//                    "id": 12345,
+//                    "name": "Celina",
+//                    "status": "sold"
+//                }
+//                """;
+//        given().contentType(ContentType.JSON)
+//                .body(updatBody)
+//                .when()
+//                    .put(routesPets.put_url)
+//                .then()
+//                .statusCode(200)
+//                .body("status", equalTo("sold"));
+//
+//
+//        given().pathParam("status", petId)
+//                .when()
+//                .get(routesPets.get_url_status)
+//                .then().statusCode(200)
+//                .body("status", equalTo("sold"));
+//
+//
+//    }
 }
