@@ -4,8 +4,6 @@ import api.endpoints.User.Routes;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.testng.annotations.Test;
 import api.endpoints.store.routesPets;
 
@@ -114,7 +112,7 @@ public class petTests {
 
         String requestBody = """
                 {
-                    "id": 435,
+                    "id": 12345,
                     "name": "Celina",
                     "category": ,
                     "status": "available"
@@ -127,9 +125,10 @@ public class petTests {
                 .when()
                 .post(routesPets.post_url)
                 .then()
-                .statusCode(405)
-                .body("message", equalTo("Invalid input"))
+                .statusCode(400)
+                .body("message", equalTo("bad input"))
                 .extract().response();
+        response.then().log().body();
 
     }
 
