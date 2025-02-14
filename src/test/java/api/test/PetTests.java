@@ -1,6 +1,5 @@
 package api.test;
 
-import api.endpoints.User.Routes;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -10,7 +9,7 @@ import api.endpoints.store.routesPets;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-public class petTests {
+public class PetTests {
 
     private int petID;
 
